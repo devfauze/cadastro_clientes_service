@@ -10,6 +10,10 @@ app.setErrorHandler((error, request, reply) => {
     reply.code(400).send({ message: error.message})
 })
 
+app.listen(port, () => {
+    console.log('Listening on port')
+})
+
 const start = async () => {
 
     await app.register(cors, {origin: '*',
