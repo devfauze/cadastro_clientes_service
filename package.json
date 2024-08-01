@@ -1,0 +1,26 @@
+{
+  "name": "cadastro-clientes",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "index.js",
+  "engines":{
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "prisma generate && tsx watch src/server.ts"
+  },
+  "author": "Fauze Cavalari Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "prisma": "^5.8.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@prisma/client": "^5.8.1",
+    "fastify": "^4.25.2",
+    "tsx": "^4.7.0"
+  }
+}
